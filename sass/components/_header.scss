@@ -1,7 +1,9 @@
 .header {
-  padding: 24px 0px;
-  width: 100%;
-  background-color: getColor("white-color");
+  position: absolute;
+  // padding: 24px 0px;
+  padding-bottom: 40px;
+  // width: 100%;
+  // background-color: getColor("white-color");
 
   &__inner {
     @extend %dis-flex__al-it;
@@ -37,7 +39,7 @@
   }
 
   &__link {
-    color: getColor("black-color");
+    color: getColor("white-color");
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -50,17 +52,17 @@
       color: getColor("blue-color");
     }
 
-    &.current {
-      color: getColor("blue-color");
-      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
+    // &.current {
+    //   color: getColor("blue-color");
+    //   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    // }
 
     &--color-grey {
       @extend %dis-flex__al-it;
     }
 
     &--color-grey {
-      color: getColor("basic-text-color");
+      color: getColor("white-color");
     }
   }
 }
